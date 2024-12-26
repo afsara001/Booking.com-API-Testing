@@ -1,0 +1,243 @@
+{
+	"id": "9b84da23-ce75-4fe6-adb0-04a4699dab8c",
+	"name": "Booking.com API Tests for Homepage",
+	"timestamp": "2024-12-26T08:35:01.781Z",
+	"collection_id": "37943010-64ede9ae-735d-4726-9920-7824d68d9171",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "error",
+	"startedAt": "2024-12-26T08:34:53.168Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "5af2aaaa-67d8-4dfd-b573-ce3e2d6e5445",
+			"name": "Validate Homepage Response",
+			"url": "https://www.booking.com/",
+			"time": 736,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				736
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "11451baa-1f79-4e15-9388-bd46d0dccd4b",
+			"name": "Validate Response Time",
+			"url": "https://www.booking.com/",
+			"time": 822,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				822
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "d42210b3-7f97-4867-b457-bb914674f398",
+			"name": "Validate Content-Type Header",
+			"url": "https://www.booking.com/",
+			"time": 720,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Content-Type is JSON": false
+			},
+			"testPassFailCounts": {
+				"Content-Type is JSON": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				720
+			],
+			"allTests": [
+				{
+					"Content-Type is JSON": false
+				}
+			]
+		},
+		{
+			"id": "8f870f36-2ec6-4774-b384-2b2edf26f107",
+			"name": "Validate Language Parameter",
+			"url": "https://www.booking.com/?lang={{en}}",
+			"time": 698,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"error": false
+			},
+			"testPassFailCounts": {
+				"error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				698
+			],
+			"allTests": [
+				{
+					"error": false
+				}
+			]
+		},
+		{
+			"id": "f04e41a8-1abc-439d-822c-6f76d2e5c503",
+			"name": "Valid Search Parameters",
+			"url": "https://www.booking.com/search",
+			"time": 770,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				770
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "52dded14-5f49-4b7f-812a-a3fae1d12c42",
+			"name": "Invalid Currency Parameter",
+			"url": "https://www.booking.com/?currency=INVALID",
+			"time": 752,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Invalid currency is handled properly": false
+			},
+			"testPassFailCounts": {
+				"Invalid currency is handled properly": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				752
+			],
+			"allTests": [
+				{
+					"Invalid currency is handled properly": false
+				}
+			]
+		},
+		{
+			"id": "bf21a553-6482-42d8-aafa-9cd925ff03f5",
+			"name": "Missing Parameters",
+			"url": "https://www.booking.com/search",
+			"time": 735,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Missing parameters return an error": false
+			},
+			"testPassFailCounts": {
+				"Missing parameters return an error": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				735
+			],
+			"allTests": [
+				{
+					"Missing parameters return an error": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5233,
+	"collection": {
+		"requests": [
+			{
+				"id": "5af2aaaa-67d8-4dfd-b573-ce3e2d6e5445",
+				"method": "GET"
+			},
+			{
+				"id": "11451baa-1f79-4e15-9388-bd46d0dccd4b",
+				"method": "GET"
+			},
+			{
+				"id": "d42210b3-7f97-4867-b457-bb914674f398",
+				"method": "GET"
+			},
+			{
+				"id": "8f870f36-2ec6-4774-b384-2b2edf26f107",
+				"method": "GET"
+			},
+			{
+				"id": "f04e41a8-1abc-439d-822c-6f76d2e5c503",
+				"method": "POST"
+			},
+			{
+				"id": "52dded14-5f49-4b7f-812a-a3fae1d12c42",
+				"method": "GET"
+			},
+			{
+				"id": "bf21a553-6482-42d8-aafa-9cd925ff03f5",
+				"method": "GET"
+			},
+			{
+				"id": "358de948-8022-47e9-a026-042606df9a8e",
+				"method": "GET"
+			}
+		]
+	}
+}
