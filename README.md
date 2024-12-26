@@ -8,7 +8,6 @@ This repository contains API tests for the Booking.com homepage, performed using
 ## This project contains
 - test case report
 - test results reports (eg. postman summary report, Newman summary report)
-- tools
 - Tools Used
   - Postman: API request creation and validation.
   - Newman: CLI runner for Postman collections.
